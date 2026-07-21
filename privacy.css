@@ -1,0 +1,1501 @@
+/* ==========================================================
+   ROADBUDDY PRIVACY POLICY
+   Premium Industrial Theme
+========================================================== */
+
+/* ==========================
+   GOOGLE FONT FALLBACK
+========================== */
+
+:root{
+
+    --bg:#111315;
+    --surface:#181A1D;
+    --surface-2:#1D2024;
+
+    --paper:#ECE5D7;
+
+    --border:#2C3035;
+
+    --primary:#FF7A1A;
+    --primary-hover:#ff8b37;
+
+    --white:#F5F5F2;
+    --text:#D6D8DB;
+    --muted:#9EA3AA;
+
+    --success:#26D07C;
+
+    --container:1280px;
+
+    --radius:18px;
+
+    --shadow:
+    0 20px 50px rgba(0,0,0,.30);
+
+    --transition:.35s ease;
+
+}
+
+/* ==========================
+ RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:Inter,sans-serif;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+ GRID BACKGROUND
+========================== */
+
+.grid-background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-1;
+
+    background:
+
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+
+    background-size:48px 48px;
+
+    opacity:.65;
+
+}
+
+/* ==========================
+ CONTAINER
+========================== */
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin:auto;
+
+}
+
+/* ==========================
+ PROGRESS BAR
+========================== */
+
+.progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:var(--primary);
+
+    z-index:9999;
+
+}
+
+/* ==========================
+ HEADER
+========================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(17,19,21,.88);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+/* ==========================
+ NAVBAR
+========================== */
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:90px;
+
+}
+
+/* ==========================
+ LOGO
+========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.logo .white{
+
+    color:white;
+
+    font-family:Anton,sans-serif;
+
+    font-size:34px;
+
+}
+
+.logo .orange{
+
+    color:var(--primary);
+
+    font-family:Anton,sans-serif;
+
+    font-size:34px;
+
+}
+
+.logo .divider{
+
+    width:1px;
+
+    height:45px;
+
+    background:var(--border);
+
+}
+
+.logo p{
+
+    font-family:"IBM Plex Mono",monospace;
+
+    color:var(--muted);
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    line-height:18px;
+
+}
+
+/* ==========================
+ NAVIGATION
+========================== */
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:var(--muted);
+
+    font-family:"IBM Plex Mono",monospace;
+
+    letter-spacing:1px;
+
+    font-size:13px;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+nav a:hover{
+
+    color:white;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ==========================
+ HERO
+========================== */
+
+.hero{
+
+    padding:110px 0;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+/* ==========================
+ EYEBROW
+========================== */
+
+.eyebrow{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    color:var(--muted);
+
+    font-family:"IBM Plex Mono";
+
+    letter-spacing:2px;
+
+    font-size:12px;
+
+    margin-bottom:28px;
+
+}
+
+.line{
+
+    width:70px;
+
+    height:2px;
+
+    background:var(--primary);
+
+}
+
+/* ==========================
+ HERO TITLE
+========================== */
+
+.hero h1{
+
+    font-family:Anton,sans-serif;
+
+    color:white;
+
+    font-size:110px;
+
+    line-height:.95;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1 span{
+
+    display:block;
+
+    color:var(--primary);
+
+}
+
+/* ==========================
+ HERO TEXT
+========================== */
+
+.hero p{
+
+    max-width:620px;
+
+    color:var(--muted);
+
+    font-size:18px;
+
+    line-height:34px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================
+ BUTTON
+========================== */
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:220px;
+
+    height:60px;
+
+    border-radius:16px;
+
+    background:var(--primary);
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:0 12px 30px rgba(255,122,26,.22);
+
+}
+
+.hero-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--primary-hover);
+
+    box-shadow:0 18px 45px rgba(255,122,26,.35);
+
+}
+
+/* ==========================
+ DOCUMENT CARD
+========================== */
+
+.paper-card{
+
+    background:var(--paper);
+
+    color:#222;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.paper-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:8px;
+
+    background:var(--primary);
+
+}
+
+.paper-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.paper-header h3{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.label{
+
+    color:#777;
+
+    font-size:12px;
+
+    font-family:"IBM Plex Mono";
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.status{
+
+    background:#d9ffe9;
+
+    color:#147d46;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.paper-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.paper-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding-bottom:16px;
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+}
+
+.paper-row span{
+
+    color:#777;
+
+}
+
+.paper-row strong{
+
+    color:#111;
+
+}
+
+/* ==========================================================
+   POLICY SECTION
+========================================================== */
+
+.policy-section{
+    padding:100px 0;
+}
+
+.layout{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+    position:sticky;
+    top:120px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    height:fit-content;
+}
+
+.sidebar h4{
+
+    color:var(--white);
+
+    margin-bottom:25px;
+
+    font-family:"IBM Plex Mono", monospace;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:16px;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:var(--muted);
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    padding:8px 0;
+
+    border-left:2px solid transparent;
+
+    padding-left:14px;
+
+}
+
+.sidebar a:hover{
+
+    color:var(--primary);
+
+    border-left-color:var(--primary);
+
+}
+
+.sidebar a.active{
+
+    color:var(--primary);
+
+    border-left-color:var(--primary);
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+/* ==========================================================
+   POLICY CARD
+========================================================== */
+
+.policy-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:45px;
+
+    position:relative;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.policy-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:var(--primary);
+
+    transform:scaleY(0);
+
+    transform-origin:top;
+
+    transition:.4s;
+
+}
+
+.policy-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#40454d;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.policy-card:hover::before{
+
+    transform:scaleY(1);
+
+}
+
+.number{
+
+    color:var(--primary);
+
+    font-family:"IBM Plex Mono", monospace;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    margin-bottom:18px;
+
+}
+
+.policy-card h2{
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:22px;
+
+    font-weight:700;
+
+}
+
+.policy-card p{
+
+    color:var(--muted);
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+   CONTACT BOX
+========================================================== */
+
+.contact-box{
+
+    margin-top:35px;
+
+    background:#1f2226;
+
+    border:1px solid var(--border);
+
+    border-left:5px solid var(--primary);
+
+    border-radius:18px;
+
+    padding:30px;
+
+}
+
+.contact-box h3{
+
+    color:white;
+
+    margin-bottom:18px;
+
+}
+
+.contact-box p{
+
+    color:var(--text);
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    border-top:1px solid var(--border);
+
+    padding:70px 0;
+
+    margin-top:120px;
+
+    background:#0f1113;
+
+}
+
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.footer h3{
+
+    color:white;
+
+    font-size:34px;
+
+    font-family:Anton,sans-serif;
+
+    letter-spacing:1px;
+
+}
+
+.footer h3 span{
+
+    color:var(--primary);
+
+}
+
+.footer p{
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+.top-btn{
+
+    position:fixed;
+
+    bottom:35px;
+
+    right:35px;
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#111;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 40px rgba(255,122,26,.35);
+
+    transition:.3s;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    z-index:999;
+
+}
+
+.top-btn.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.top-btn:hover{
+
+    transform:translateY(-6px) rotate(-5deg);
+
+    background:var(--primary-hover);
+
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.policy-card a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    position:relative;
+
+}
+
+.policy-card a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-3px;
+
+    width:100%;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transform:scaleX(0);
+
+    transition:.3s;
+
+    transform-origin:left;
+
+}
+
+.policy-card a:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+/* ==========================================================
+   CUSTOM SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#17191d;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#343941;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary);
+
+}
+
+/* ==========================================================
+   TEXT SELECTION
+========================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+    margin:40px 0;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+@media (max-width:1200px){
+
+    .hero h1{
+        font-size:90px;
+    }
+
+    .hero-grid{
+        gap:50px;
+    }
+
+    .layout{
+        grid-template-columns:240px 1fr;
+        gap:40px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        padding:80px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .hero-left{
+        order:1;
+    }
+
+    .hero-right{
+        order:2;
+    }
+
+    .layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+
+        position:relative;
+        top:0;
+        width:100%;
+    }
+
+    .sidebar ul{
+
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .footer{
+
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .container{
+
+        width:94%;
+    }
+
+    .hero h1{
+
+        font-size:72px;
+    }
+
+    .hero p{
+
+        font-size:16px;
+        line-height:30px;
+    }
+
+    .paper-card{
+
+        padding:28px;
+    }
+
+    .paper-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .paper-row{
+
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .policy-card{
+
+        padding:30px;
+    }
+
+    .policy-card h2{
+
+        font-size:28px;
+    }
+
+    .sidebar ul{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero-btn{
+
+        width:100%;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .hero{
+
+        padding:60px 0;
+    }
+
+    .hero h1{
+
+        font-size:54px;
+    }
+
+    .hero p{
+
+        font-size:15px;
+        line-height:28px;
+    }
+
+    .logo{
+
+        gap:10px;
+    }
+
+    .logo .white,
+    .logo .orange{
+
+        font-size:28px;
+    }
+
+    .logo p{
+
+        display:none;
+    }
+
+    .policy-card{
+
+        padding:24px;
+    }
+
+    .policy-card h2{
+
+        font-size:24px;
+    }
+
+    .top-btn{
+
+        width:50px;
+        height:50px;
+        right:20px;
+        bottom:20px;
+    }
+
+}
+
+/* ==========================================================
+   SCROLL REVEAL ANIMATION
+========================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================================
+   HOVER GLOW
+========================================================== */
+
+.paper-card,
+.policy-card{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+.paper-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.40);
+
+}
+
+.policy-card:hover{
+
+    background:#1b1e22;
+}
+
+/* ==========================================================
+   ORANGE GLOW
+========================================================== */
+
+.hero-btn:focus,
+.top-btn:focus{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(255,122,26,.25);
+}
+
+/* ==========================================================
+   IMAGE SUPPORT
+========================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+}
+
+/* ==========================================================
+   LIST STYLING
+========================================================== */
+
+.policy-card ul{
+
+    margin-top:20px;
+    margin-left:20px;
+
+}
+
+.policy-card li{
+
+    margin-bottom:12px;
+
+    color:var(--muted);
+
+}
+
+.policy-card li::marker{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================================
+   BLOCKQUOTE
+========================================================== */
+
+blockquote{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-left:5px solid var(--primary);
+
+    background:#191c20;
+
+    color:#d5d7db;
+
+    border-radius:12px;
+
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+}
+
+table th{
+
+    background:#1f2327;
+
+    color:white;
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+table td{
+
+    padding:18px;
+
+    color:var(--muted);
+
+    border-top:1px solid var(--border);
+
+}
+
+table tr:hover{
+
+    background:#1a1d20;
+
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    background:#1d2024;
+
+    border:1px solid var(--border);
+
+    color:white;
+
+    font-family:Inter,sans-serif;
+
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:50px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:50px;}
+
+.hidden{
+
+    display:none;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.grid{
+
+    display:grid;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.justify-between{
+
+    justify-content:space-between;
+
+}
+
+/* ==========================================================
+   SMOOTH FADE
+========================================================== */
+
+.fade{
+
+    animation:fade .8s ease forwards;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   FLOAT ANIMATION
+========================================================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   END OF FILE
+========================================================== */
